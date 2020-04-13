@@ -9,7 +9,7 @@ Basic OS commands
 
 ## How to try:
 To try out AquaOS: 
-1. Download the iso file and vmdk file above.
+1. Download the iso file (inside the zip folder) and vmdk file above.
 2. Download VMWare.
 3. Create a new virtual machine.
 4. For the OS, choose other.
