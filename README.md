@@ -28,7 +28,7 @@ To fork a project off of AquaOS:
 
 ## Images:
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture.PNG?raw=true)
-![image of aquaos]()
-![image of aquaos]()
-![image of aquaos]()
-![image of aquaos]()
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture2.PNG?raw=true)
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture3.PNG?raw=true)
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture4.PNG?raw=true)
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture5.PNG?raw=true)
