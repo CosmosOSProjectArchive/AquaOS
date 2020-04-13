@@ -17,3 +17,11 @@ To try out AquaOS:
 6. Delete the existing hard disk and add a new one.
 7. Choose to add an existing hard disk, and add the Filesystem.vmdk file that you downloaded in step 1.
 8. Enjoy!
+
+## To make your own AquaOS:
+To fork a project off of AquaOSL
+1. Download the Kernel.cs file.
+2. Follow instruction from gocosmos.org to download & install Visual Studio and Cosmos.
+3. Make a new Visual Studio project with the Cosmos c# kernel template.
+4. Copy and paste my kernel to the kernel you just created.
+5. Change it up, and the run it!
