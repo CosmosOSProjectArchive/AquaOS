@@ -41,6 +41,7 @@ info = yourinfohere
 info = Example app version 100,001 by Example McMaker
 5. REMEMBER: Code the app in AquaOS, using Scribbler.
 6. Run your app!
+
 _Note: The info part is not required, but when an aquapp is run on AquaOS, it will display that info before starting the aquapp._
 
 ## To make your own AquaOS:
@@ -52,8 +53,4 @@ To fork a project off of AquaOS:
 5. Change it up, and the run it!
 
 ## Images:
-![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture.PNG?raw=true)
-![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture2.PNG?raw=true)
-![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture3.PNG?raw=true)
-![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture4.PNG?raw=true)
-![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/Capture5.PNG?raw=true)
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/SNAP.PNG?raw=true)
