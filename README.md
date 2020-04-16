@@ -22,6 +22,27 @@ To try out AquaOS:
 7. Choose to add an existing hard disk, and add the Filesystem.vmdk file that you downloaded in step 1.
 8. Enjoy!
 
+## How to create Aquapps:
+Materials:
+A working version of AquaOS version 0.32 or higher.
+Knowledge!
+
+### Steps:
+1. Learn the commands of ASCS (there aren't many):
+write(texttowrite)
+writeline(texttowrite)
+inputget(texttowrite) <- creates variable with input called usrinput
+sayinput()
+newline()
+2. Write a program
+3. Add info to the beggining of the script like this:
+info = yourinfohere
+4. Example aquapp:
+info = Example app version 100,001 by Example McMaker
+5. REMEMBER: Code the app in AquaOS, using Scribbler.
+6. Run your app!
+_Note: The info part is not required, but when an aquapp is run on AquaOS, it will display that info before starting the aquapp._
+
 ## To make your own AquaOS:
 To fork a project off of AquaOS:
 1. Download the Kernel.cs file.
