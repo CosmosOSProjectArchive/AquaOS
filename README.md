@@ -7,6 +7,10 @@ FAT FileSystem
 Text editor(work-in-progress)
 Basic OS commands
 
+## Newest feature: Aquapps!
+Aquapps or __very__ simple applications written in the ASCS coding language,
+a __very__ simplified version of C#. Read below to learn how to make an aquapp!
+
 ## How to try:
 To try out AquaOS: 
 1. Download the iso file (inside the zip folder) and vmdk file above.
