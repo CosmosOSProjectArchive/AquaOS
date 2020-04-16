@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using Sys = Cosmos.System;
 namespace CosmosKernelTest
@@ -12,14 +13,16 @@ namespace CosmosKernelTest
         protected override void BeforeRun()
         {
             Console.Clear();
-            Console.WriteLine("Aqua OS Version 0.31 by Kai Howard     .d8b.   .d88b.  db    db  .d8b.");
+            Console.WriteLine("Aqua OS Version 0.32 by Kai Howard     .d8b.   .d88b.  db    db  .d8b.");
             Console.WriteLine("Powered by Cosmos                     d8' `8b .8P  Y8. 88    88 d8' `8b");
             Console.WriteLine("Options:                              88ooo88 88    88 88    88 88ooo88");
             Console.WriteLine("1: Boot Aqua OS normally              88~~~88 88    88 88    88 88~~~88");
             Console.WriteLine("2: Boot without FileSystem            88   88 `8P  d8' 88b  d88 88   88");
             Console.WriteLine("3: Boot in DEV mode                   YP   YP  `Y88d\\  ~Y8888P' YP   YP");
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Chosen Option: "); var option = Console.ReadLine();
+            Console.Write("Chosen Option: ");
+            Console.ForegroundColor = ConsoleColor.White;
+            var option = Console.ReadLine();
             if (option.Contains("1"))
             {
                 var fs = new Sys.FileSystem.CosmosVFS();
@@ -62,7 +65,7 @@ namespace CosmosKernelTest
             if (option.Contains("2"))
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Aqua OS version 0.31 by Kai Howard.");
+                Console.WriteLine("Aqua OS version 0.32 by Kai Howard.");
                 Console.WriteLine("For help, run command: help.");
                 Console.WriteLine("Thanks to the CosmosOS team, it is the base for this project.");
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -71,7 +74,7 @@ namespace CosmosKernelTest
             else if (option.Contains("1"))
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Aqua OS version 0.31 by Kai Howard.");
+                Console.WriteLine("Aqua OS version 0.32 by Kai Howard.");
                 Console.WriteLine("For help, run command: help.");
                 Console.WriteLine("FileSystem is not completed yet so it will be buggy.");
                 Console.WriteLine("Thanks to the CosmosOS team, it is the base for this project.");
@@ -79,7 +82,7 @@ namespace CosmosKernelTest
             else
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Aqua OS version 0.31 by Kai Howard.");
+                Console.WriteLine("Aqua OS version 0.32 by Kai Howard.");
                 Console.WriteLine("For help, run command: help.");
                 Console.WriteLine("FileSystem is not completed yet so it will be buggy.");
                 Console.WriteLine("Thanks to the CosmosOS team, it is the base for this project.");
@@ -98,6 +101,63 @@ namespace CosmosKernelTest
             if (input == "shutdown")
             {
                 Sys.Power.Shutdown();
+            }
+            else
+            if (input.Contains("run"))
+            {
+                
+                var aquapptorun = input.Remove(0, 4);
+                string[] lines = System.IO.File.ReadAllLines(dir+aquapptorun);
+                var usrinput = "";
+                foreach (string line in lines)
+                {
+                    if (line.Contains("info = "))
+                    {
+                        var info = line.Replace("info = ", "");
+                        Console.WriteLine(info);
+                        Console.Write("Press any key to start the aquapp! ");
+                        Console.ReadLine();
+                        Console.WriteLine();
+                    }
+                    if (line.Contains("write"))
+                    {
+                        var tempctr = line.Replace("(", "");
+                        var tempctr2 = line.Replace(")", "");
+                        var ctr = tempctr2.Remove(0, 6);
+                        Console.Write(ctr);
+                    }
+                    else if (line.Contains("sayinput"))
+                    {
+                        Console.Write(usrinput);
+                    }
+                    else if (line.Contains("inputget"))
+                    {
+                        var tempctr = line.Replace("(", "");
+                        var tempctr2 = line.Replace(")", "");
+                        var ctr = tempctr2.Remove(0, 9);
+                        Console.Write(ctr);
+                        usrinput = Console.ReadLine();
+                    }
+                    else if (line.Contains("writeline"))
+                    {
+                        var tempctr = line.Replace("(", "");
+                        var tempctr2 = line.Replace(")", "");
+                        var ctr = tempctr2.Remove(0, 10);
+                        Console.WriteLine(ctr);
+                    }
+                    if (line.Contains("time"))
+                    {
+                        var time = DateTime.Now;
+                    }
+                    else if (line.Contains("newline"))
+                    {
+                        Console.WriteLine("");
+                    }
+                    else
+                    {
+                        //Skips over unrecognized line, adds to log.
+                    }
+                }
             }
             else
             if (input.Contains("mkfile"))
@@ -184,13 +244,15 @@ namespace CosmosKernelTest
             else
             if (input.Contains("scribble"))
             {
-                //Scribbler: a text editor written in 5 lines of code!
+                //Scribbler: a text editor written in 8 lines of code!
                 Console.WriteLine("1st line: txt file. 2nd line: text to add.");
                 var txtfile = Console.ReadLine();
                 var ttw = Console.ReadLine();
-                var oldtxt = File.ReadAllText(@"0:\" + txtfile);
-                File.WriteAllText(@"0:\" + txtfile, oldtxt + ttw);
-
+                using (var tw = new StreamWriter(txtfile, true))
+                {
+                    tw.WriteLine(ttw);
+                    tw.Close();
+                }
             }
             else
             if (input.Contains("readfile"))
@@ -221,10 +283,13 @@ namespace CosmosKernelTest
                 Console.WriteLine("clear = clears the screen");
                 Console.WriteLine("echo (text) = echoes user input");
                 Console.WriteLine("gettime = displays date and time");
+                Console.WriteLine("run (program) = runs an aquapp");
                 Console.WriteLine("");
                 Console.WriteLine("Included applications: ");
-                Console.WriteLine("Scribbler: A text file editor written in 5 lines of code!");
+                Console.WriteLine("Scribbler: A text file editor written in 8 lines of code!");
                 Console.WriteLine("To use, run the command: scribble");
+                Console.WriteLine("AppWithInfo: A demonstrational aquapp that contains info");
+                Console.WriteLine("HelloUser: A demonstrational aquapp that says hello to the user");
             }
             else
             if (input == "clear")
@@ -234,8 +299,8 @@ namespace CosmosKernelTest
             else
             if (input == "about")
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("AquaOS version 0.2 by Kai Howard");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("AquaOS version 0.32 by Kai Howard");
             }
             else
             {
