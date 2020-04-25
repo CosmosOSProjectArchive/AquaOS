@@ -64,4 +64,7 @@ To fork a project off of AquaOS:
 5. Change it up, and the run it!
 
 ## Images:
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/welcome.png?raw=true)
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/bootscreen.PNG?raw=true)
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/booted.PNG?raw=true)
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/SNIP.PNG?raw=true)
