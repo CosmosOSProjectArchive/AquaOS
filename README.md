@@ -61,7 +61,7 @@ info = Example app version 100,001 by Example McMaker
 5. REMEMBER: Code the app in AquaOS, using Scribbler.
 6. Run your app!
 
-_Note: The info part is not required, but when an aquapp is run on AquaOS, it will display that info before starting the aquapp._
+_Note: The info part is not required, but when an aquapp is run on AquaOS, it will display that info before starting the aquapp.
 
 ## To make your own AquaOS:
 To fork a project off of AquaOS:
@@ -80,7 +80,7 @@ VMWare workstation player
 
 *_After the build is done it will launch a VM window, if you are looking for the .iso file it is located in: 
 
-C:\Users\\[yourusername]\source\repos\AquaOS\AquaOS\bin\Debug\netcoreapp2.0\cosmos\._
+C:\Users\\[yourusername]\source\repos\AquaOS\AquaOS\bin\Debug\netcoreapp2.0\cosmos\
 
 ## Images:
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/welcome.png?raw=true)
