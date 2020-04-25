@@ -26,8 +26,9 @@ Read below to learn how to make an aquapp!
 4. FileSystem bug fixes! (subdirectories still not supported)
 5. Cool boot improvements. (better logo, and a boot animation)
 6. Sound!
-7. More than _400_ lines of code!
-7. Some easter eggs...
+7. Exception handling.
+8. More than _400_ lines of code!
+9. Some easter eggs...
 
 ## How to try:
 To try out AquaOS: 
