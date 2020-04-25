@@ -4,13 +4,19 @@ Aqua OS is based on CosmosOS: gocosmos.org.
 
 Features:
 FAT FileSystem
+
 Text editor(work-in-progress)
+
 Basic OS commands
+
+Aquapps!
 
 ## (New) feature: Aquapps!
 Aquapps are __very__ simple applications written in the ASCS coding language,
 a __very__ simplified version of C#.
-Aquapp files are files ending in .aquapp, .aquaa, and .ascsa.
+
+Aquapp files are files ending in .aquapp, .aquaa, .sca, .scaqp and .ascsa.
+
 Read below to learn how to make an aquapp!
 
 ## What's new (for 0.40 kernel):
