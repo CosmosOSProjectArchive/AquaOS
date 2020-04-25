@@ -18,6 +18,7 @@ a __very__ simplified version of C#. Read below to learn how to make an aquapp!
 4. FileSystem bug fixes! (subdirectories still not supported)
 5. Cool boot improvements. (better logo, and a boot animation)
 6. Sound!
+7. More than _400_ lines of code!
 7. Some easter eggs...
 
 ## How to try:
