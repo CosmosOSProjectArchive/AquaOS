@@ -65,11 +65,20 @@ _Note: The info part is not required, but when an aquapp is run on AquaOS, it wi
 
 ## To make your own AquaOS:
 To fork a project off of AquaOS:
-1. Download the Kernel.cs file.
-2. Follow instruction from gocosmos.org to download & install Visual Studio and Cosmos.
-3. Make a new Visual Studio project with the Cosmos c# kernel template.
-4. Copy and paste my kernel to the kernel you just created.
-5. Change it up, and the run it!
+
+Prerequisites:
+Visual Studio 2019
+AquaOS Userkit
+.NET coore
+VMWare workstation player
+
+1. Download the Kernel of your choice to: C:\Users\[yourusername]\source\repos\AquaOS\AquaOS\.
+2. Dowload the solution file to: C:\Users\[yourusername]\source\repos\AquaOS\.
+3. Open up the solution.
+4. Change it.
+5. Press the build option and it will build for you!*
+
+* *After the build is done it will launch a VM window, if you are looking for the .iso file it is located in: C:\Users\[yourusername]\source\repos\AquaOS\AquaOS\bin\Debug\netcoreapp2.0\cosmos\.
 
 ## Images:
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/welcome.png?raw=true)
