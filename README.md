@@ -7,7 +7,7 @@ FAT FileSystem
 Text editor(work-in-progress)
 Basic OS commands
 
-## Newest feature: Aquapps!
+## (New) feature: Aquapps!
 Aquapps are __very__ simple applications written in the ASCS coding language,
 a __very__ simplified version of C#. Read below to learn how to make an aquapp!
 
