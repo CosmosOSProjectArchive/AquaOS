@@ -78,7 +78,7 @@ VMWare workstation player
 4. Change it.
 5. Press the build option and it will build for you!*
 
-*_After the build is done it will launch a VM window, if you are looking for the .iso file it is located in: 
+*After the build is done it will launch a VM window, if you are looking for the .iso file it is located in:
 
 C:\Users\\[yourusername]\source\repos\AquaOS\AquaOS\bin\Debug\netcoreapp2.0\cosmos\
 
