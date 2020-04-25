@@ -11,6 +11,15 @@ Basic OS commands
 Aquapps are __very__ simple applications written in the ASCS coding language,
 a __very__ simplified version of C#. Read below to learn how to make an aquapp!
 
+## What's new (for 0.40 kernel):
+1. Eraser, an app to erase text from files!
+2. Scribbler improvements and bug fixes.
+3. Dev mode removed.
+4. FileSystem bug fixes! (subdirectories still not supported)
+5. Cool boot improvements. (better logo, and a boot animation)
+6. Sound!
+7. Some easter eggs...
+
 ## How to try:
 To try out AquaOS: 
 1. Download the iso file (CosmosKernel5 does not support aquapps) (inside the zip folder) and vmdk file above.
