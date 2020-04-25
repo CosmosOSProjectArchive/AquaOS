@@ -15,7 +15,7 @@ Aquapps!
 Aquapps are __very__ simple applications written in the ASCS coding language,
 a __very__ simplified version of C#.
 
-Aquapp files are files ending in .aquapp, .aquaa, .sca, .scaqp and .ascsa.
+Aquapp files are files ending in .aquapp, .aquaa, .scaqp and .ascsa.
 
 Read below to learn how to make an aquapp!
 
