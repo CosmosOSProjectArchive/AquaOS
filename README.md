@@ -35,6 +35,7 @@ To try out AquaOS:
 ## How to create Aquapps:
 Materials:
 A working version of AquaOS version 0.32 or higher.
+
 Knowledge!
 
 ### Steps:
