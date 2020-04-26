@@ -32,7 +32,7 @@ Read below to learn how to make an aquapp!
 
 ## How to try:
 To try out AquaOS: 
-1. Download the iso file (with kernel 0.32 or or better) (inside the zip folder) and vmdk file above.
+1. Download the iso file (inside the zip folder) and vmdk file above.
 2. Download VMWare.
 3. Create a new virtual machine.
 4. For the OS, choose other.
