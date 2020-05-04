@@ -1,5 +1,6 @@
 # AquaOS
 Aqua OS is a basic os with a cli, written in c#.
+![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/bootscreen.PNG?raw=true)
 Aqua OS is based on CosmosOS: gocosmos.org.
 
 Features:
@@ -69,9 +70,9 @@ _Note: The info part is not required, but when an aquapp is run on AquaOS, it wi
 To fork a project off of AquaOS:
 
 Prerequisites:
-Visual Studio 2019
-AquaOS Userkit
-.NET coore
+Visual Studio 2019, 
+AquaOS Userkit, 
+.NET core and 
 VMWare workstation player
 
 1. Download the Kernel of your choice to: C:\Users\[yourusername]\source\repos\AquaOS\AquaOS\.
@@ -86,6 +87,5 @@ C:\Users\\[yourusername]\source\repos\AquaOS\AquaOS\bin\Debug\netcoreapp2.0\cosm
 
 ## Images:
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/welcome.png?raw=true)
-![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/bootscreen.PNG?raw=true)
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/booted.PNG?raw=true)
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/SNIP.PNG?raw=true)
