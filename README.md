@@ -1,6 +1,8 @@
 # AquaOS
 Aqua OS is a basic os with a cli, written in c#.
+
 ![image of aquaos](https://github.com/pikalover6/AquaOS/blob/Images/bootscreen.PNG?raw=true)
+
 Aqua OS is based on CosmosOS: gocosmos.org.
 
 Features:
