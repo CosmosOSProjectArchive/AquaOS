@@ -1,3 +1,5 @@
+## NOTE: PLEASE DON'T USE THIS CODE IT IS OLD AND SPAGHETTI.  THIS IS HERE FOR HISTORICAL PURPOSE 
+
 # AquaOS
 Aqua OS is a basic os with a cli, written in c#.
 
